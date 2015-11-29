@@ -91,6 +91,8 @@ $(document).ready(function(){
     });
 
     $('#bottomButton').on('click', function(){
+        $('.languageButton').css('background-color', '#FFF')
+        $('#locationButton').css('background-color', '#FFF')        
         $.fn.fullpage.moveTo(1); //Return to start
         //Reset all vars, all functions
     });
