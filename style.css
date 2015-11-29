@@ -1,0 +1,39 @@
+body{
+    font-family: helvetica, garamond;
+    cursor: default;
+}
+
+#bottomButton{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #7AC3C3;
+    opacity: 0.9;
+}
+
+#topBanner{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #C4C4C7;
+    opacity: 0.9;
+}
+
+.languageButton, #locationButton{
+    padding:10px;
+    border: 1px solid #C4C4C7;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.section{
+    text-align:center;
+}
+
+#map{
+    height: 100px;
+    width:100%;
+    position: relative;
+}

@@ -1,0 +1,290 @@
+geoJsonData = {  
+    "type":"FeatureCollection",
+    "features":[  
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[
+                    150.9102578,
+                    -33.9280681
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Family Medical & Dental Practice - Dr G Natale",
+                "Address":"84 Hoxton Park Rd",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9824 3641"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[
+                    150.9218451333,
+                    -33.9248338333
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Priority Medical Centre",
+                "Address":"265/267 Macquarie St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9821 2433"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9274619,
+                    -33.9198993
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Mcguiness Dr John",
+                "Address":"42 Bigge St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9824 1923"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9249946667,
+                    -33.911662
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Sydney South West Dermatology & Specialist Skin Cancer Centre - Dr. Jennifer Yip",
+                "Address":"21 Castlereagh St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9602 5785"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9253938,
+                    -33.9120523333
+                ]
+            },
+            "properties":{  
+                "PracticeName":"South West Vision Institute",
+                "Address":"Level 2, 5-7 Secant St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9821 2993"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9287906333,
+                    -33.9168665333
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Dr. Phillip Artemi",
+                "Address":"17 Goulburn Serviceway",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9602 0286"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9078173333,
+                    -33.9383306667
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Dr Ming K Yoong",
+                "Address":"Suite 6, 42-48 Bigge Street",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9822 4553"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9225049667,
+                    -33.9222750667
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Lertsumitkul Dr S",
+                "Address":"3/13-15 Moore St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9734 0588"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9289759333,
+                    -33.9182385
+                ]
+            },
+            "properties":{  
+                "PracticeName":"DR Anthony Johnson",
+                "Address":"8/41-43 Goulburn St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9824 0949"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9268537333,
+                    -33.9224913667
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Wilson Robert",
+                "Address":"6/171 Bigge St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9601 3033"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9286893,
+                    -33.9173975333
+                ]
+            },
+            "properties":{  
+                "PracticeName":"McKechnie Simon Dr",
+                "Address":"1/41-43 Goulburn Serviceway",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9793 3060"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9267834,
+                    -33.9228600333
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Liverpool Vascular Laboratory-Dr. M. Borkman",
+                "Address":"181 Bigge St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9822 4288"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.928935,
+                    -33.9181335
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Dr. Balsam Darwish",
+                "Address":"Suite 1, Level 1, 41-43 Goulburn Street",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9734 6622"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9304,
+                    -33.912089
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Dr Peter Campbell",
+                "Address":"11/41-43 Goulburn St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9822 5033"
+            }
+        },
+        {  
+            "type":"Feature",
+            "geometry":{  
+                "type":"Point",
+                "coordinates":[  
+                    150.9270648,
+                    -33.9226844
+                ]
+            },
+            "properties":{  
+                "PracticeName":"Dr. Hong Khiem",
+                "Address":"17 Moore St",
+                "marker-color":"#ff8888",
+                "Suburb":"Liverpool",
+                "State":"NSW",
+                "Country":"Australia",
+                "PhoneNumber":"(02) 9601 2330"
+            }
+        }
+    ]
+}
