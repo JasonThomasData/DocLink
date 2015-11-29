@@ -30,10 +30,15 @@ body{
 
 .section{
     text-align:center;
+    height: 100%;
+}
+
+#lastSection{
+    height:100%;
 }
 
 #map{
-    height: 100px;
+    height: 100%;
     width:100%;
     position: relative;
 }
