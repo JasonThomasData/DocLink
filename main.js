@@ -79,6 +79,8 @@ $(document).ready(function(){
     $('.languageButton').on('click',function(){
         languageChosen = $(this).html();
         languageTranslation = $(this).val(); //Remind me, what was the point of this? Could I replace this with those details in the translation dictionary (object) and do away with this stuff?
+        var htmlToShow = languageChosen + ' (' + languageTranslation + ')'
+        $('#languageHere').html(htmlToShow)
         moveDown(this);
     });
 
