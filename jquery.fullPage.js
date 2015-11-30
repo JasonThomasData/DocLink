@@ -111,7 +111,7 @@
             //scrolling
             css3: true,
             scrollingSpeed: 700,
-            autoScrolling: true,
+            autoScrolling: false,
             fitToSection: true,
             fitToSectionDelay: 1000,
             easing: 'easeInOutCubic',
@@ -124,7 +124,7 @@
             scrollOverflow: false,
             scrollOverflowHandler: defaultScrollHandler,
             touchSensitivity: 5,
-            normalScrollElementTouchThreshold: 0,
+            normalScrollElementTouchThreshold: 5,
 
             //Accessibility
             keyboardScrolling: false,  //I turned this off, since I want people to go through the steps
