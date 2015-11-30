@@ -123,8 +123,8 @@
             normalScrollElements: null,
             scrollOverflow: false,
             scrollOverflowHandler: defaultScrollHandler,
-            touchSensitivity: 5,
-            normalScrollElementTouchThreshold: 0,
+            touchSensitivity: 0,                        //I changed this, no scrolling on phone (touch)
+            normalScrollElementTouchThreshold: 5,
 
             //Accessibility
             keyboardScrolling: false,  //I turned this off, since I want people to go through the steps
