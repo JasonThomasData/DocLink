@@ -6,33 +6,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="leaflet-0.7.5/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
     <script type="text/javascript" src="leaflet-0.7.5/leaflet.js"></script>
-    <script type="text/javascript" src="gpPracticeData.json"></script>
+    <script type="text/javascript" src="gpPracticeData.json"></script> 
 </head>
 
 <body>
-    <div id="topBanner">
-        <h2>Find a bulk-billed local GP</h2>
-    </div>
     <div id="fullpage">
-        <div class="section"><div id="firstSection"></div></div>
+        <div class="section">
+            <div id="lastSection">
+                <h2>About</h2>
+                <p>
+                Allowing Australian refugees to find refugee-friendly doctor services (GPs). 
+                <br>
+                That includes services that are bulk-billed, who either speak the patient's language or have translation services available.
+                </p>
+                <p>Open source and on <a href="https://github.com/JasonThomasData/DocLink" target="_target"><i class="fa fa-github"></i> Github</a>
+                <br>
+                Follow me on <a href="https://twitter.com/jase_thomas" target="_target"><i class="fa fa-twitter"></i> Twitter</a>
+                </p>
+            </div>
+        </div>
+        <div class="section active">
+            <div id="firstSection"></div>
+        </div>
         <div class="section">
             <div id="middleSection">
-                <h3>☑ Doctors who bulk bill</h3>
-                <h3>☑ Doctors who speak <span id="languageHere"></span></h3>
-                <h2 id="locationButton">Find doctors</h2>
+                <h2>Only show doctors who:</h2>
+                <h3 class="checkbox" name="bulkBilling">
+                    <i></i> <span>Provide bulk-billing<span class="translationSmallFont"></span></span>
+                </h3>
+                <h3 class="checkbox" name="translator">
+                    <i class="fa fa-circle-thin"></i> <span>Provide translation services<span class="translationSmallFont"></span></span>
+                </h3>
+                <h2 id="locationButton"><i class="fa fa-map-marker"></i> <span>Find doctors<span class="translationSmallFont"></span></span></h2>
             </div>
         </div>
         <div class="section">
-            <div id="lastSection">
+            <div id="thirdSection">
                 <div id="map"></div>
             </div>
         </div>
     </div>
+    <div id="topButton">
+        <h2 id="infoButton">
+            <i class="fa fa-info-circle"></i>
+        </h2>
+        <h2>DocLink</h2>
+    </div>
     <div id="bottomButton">
-        <h2>Start again</h2>
+        <h2><i class="fa fa-refresh"></i> <span>Restart<span class="translationSmallFont"></span></span></h2>
     </div>
     <script src="main.js"></script>
 </body>

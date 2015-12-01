@@ -1,0 +1,30 @@
+{
+	"Translated names": {
+		"Arabic": "العربية",
+		"English": "English",
+		"French": "Français",
+		"Urdu": "اردو" 
+	},
+	"Translated terms": {
+		"Provide bulk-billing": {
+			"Arabic": "الطبيب مجانا",
+			"French": "Médecin gratuit",
+			"Urdu": "ڈاکٹر"
+		},
+		"Provide translation services": {
+			"Arabic": "تتوفر له مترجم",
+			"French": "A un traducteur disponible",
+			"Urdu": "ایک مترجم دستیاب ہے"
+		},
+		"Find doctors": {
+			"Arabic": "ايجاد الاطباء",
+			"French": "Trouver des médecins",
+			"Urdu": "ڈاکٹروں تلاش"
+		},
+		"Restart": {
+			"Arabic": "إعادة تشغيل",
+			"French": "Redémarrage",
+			"Urdu": "دوبارہ شروع کریں"
+		}
+	}
+}

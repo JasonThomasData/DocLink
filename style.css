@@ -3,22 +3,40 @@ body{
     cursor: default;
 }
 
-#bottomButton{
+#bottomButton, #topButton{
     position: absolute;
-    bottom: 0;
     text-align: center;
     width: 100%;
-    background-color: #7AC3C3;
-    opacity: 0.9;
+    background-color: #D7E0E0;
+    cursor: pointer;
 }
 
-#topBanner{
-    position: absolute;
+#topButton{
     top: 0;
-    text-align: center;
-    width: 100%;
-    background-color: #C4C4C7;
-    opacity: 0.9;
+}
+
+#bottomButton{
+    bottom: 0;
+}
+
+.checkbox{
+    cursor:pointer;
+}
+
+#topButton *{
+    display: inline-block;
+}
+
+#fullpage{
+    position: absolute;
+    top:0;
+}
+
+#infoButton{
+    position:absolute;
+    left:0px;
+    margin-left:10px;
+    cursor: pointer;    
 }
 
 .languageButton, #locationButton{
@@ -26,6 +44,7 @@ body{
     border: 1px solid #C4C4C7;
     margin-left:10px;
     margin-right:10px;
+    cursor: pointer;
 }
 
 .section{
@@ -33,12 +52,19 @@ body{
     height: 100%;
 }
 
-#lastSection{
+#map{
     height:100%;
+    width:100%;
+    position: absolute;
 }
 
-#map{
-    height: 100%;
-    width:100%;
-    position: relative;
+.translationSmallFont{
+    margin-left:10px;
+    margin-right:10px;
+    color: #3F3F40;
+}
+
+#infoWindow{
+    visibility: hidden;
+    position: absolute;
 }
