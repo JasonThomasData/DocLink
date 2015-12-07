@@ -39,11 +39,10 @@ body{
     cursor: pointer;    
 }
 
-.languageButton, #locationButton{
+.languageButton, #locationButton, #tooltipBackButton{
     padding:10px;
     border: 1px solid #C4C4C7;
-    margin-left:10px;
-    margin-right:10px;
+    margin:10px;
     cursor: pointer;
 }
 
@@ -55,7 +54,7 @@ body{
 #map{
     height:100%;
     width:100%;
-    position: absolute;
+    top:0;
 }
 
 .translationSmallFont{

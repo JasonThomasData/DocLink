@@ -1,30 +1,55 @@
 {
 	"Translated names": {
 		"Arabic": "العربية",
+		"Burmese": "မြန်မာ",
 		"English": "English",
 		"French": "Français",
-		"Urdu": "اردو" 
+		"Tamil": "தமிழ்",
+		"Urdu": "اردو"
 	},
 	"Translated terms": {
+		"Filter results:": {
+			"Arabic": "تصفية النتائج",
+			"Burmese": "Filter ရလဒ်များကို",
+			"French": "Filtrer les résultats",
+			"Tamil": "வடிகட்டி முடிவு" ,
+			"Urdu": "فلٹر کے نتائج"
+		},
 		"Provide bulk-billing": {
 			"Arabic": "الطبيب مجانا",
+			"Burmese": "အခမဲ့ ဆရာဝန်",
 			"French": "Médecin gratuit",
+			"Tamil": "இலவச மருத்துவர்",
 			"Urdu": "ڈاکٹر"
 		},
 		"Provide translation services": {
 			"Arabic": "تتوفر له مترجم",
+			"Burmese": "ဘာသာပြန်ချက် ဝန်ဆောင်မှုပေး",
 			"French": "A un traducteur disponible",
+			"Tamil": "மொழிபெயர்ப்பு சேவைகள் வழங்கவும்" ,
 			"Urdu": "ایک مترجم دستیاب ہے"
 		},
 		"Find doctors": {
 			"Arabic": "ايجاد الاطباء",
+			"Burmese": "ဆရာဝန်များက ရှာမည်",
 			"French": "Trouver des médecins",
+			"Tamil": "டாக்டர்கள் காணவும்",
 			"Urdu": "ڈاکٹروں تلاش"
 		},
 		"Restart": {
 			"Arabic": "إعادة تشغيل",
+			"Burmese": "ပြန်စတင်သည်",
 			"French": "Redémarrage",
+			"Tamil": "மறுதொடக்கம்",
 			"Urdu": "دوبارہ شروع کریں"
+		},
+		"Return to map": {
+			"Arabic": "عودة إلى الخريطة",
+			"Burmese": "မြေပုံကို သို့ပြန်သွားသည်",
+			"French": "Retour à la carte",
+			"Tamil": "வரைபடத்திற்குத் திரும்பு",
+			"Urdu": "نقشے پر واپس"
 		}
+		
 	}
 }

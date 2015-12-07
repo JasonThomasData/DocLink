@@ -123,8 +123,8 @@
             normalScrollElements: null,
             scrollOverflow: false,
             scrollOverflowHandler: defaultScrollHandler,
-            touchSensitivity: 0,                        //I changed this, no scrolling on phone (touch)
-            normalScrollElementTouchThreshold: 5,
+            touchSensitivity: 5,                        //I changed this, no scrolling on phone (touch)
+            normalScrollElementTouchThreshold: 10,
 
             //Accessibility
             keyboardScrolling: false,  //I turned this off, since I want people to go through the steps
@@ -132,7 +132,7 @@
             recordHistory: true,
 
             //design
-            controlArrows: true,
+            controlArrows: false,   //Turned this off, the program slides right on marker click event
             controlArrowColor: '#fff',
             verticalCentered: true,
             resize: false,

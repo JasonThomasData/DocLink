@@ -2,22 +2,29 @@ $(document).ready(function(){
     $('#fullpage').fullpage();  //Function to get the scroller going
 
     function _init_(languageDictionary){
-        var languages = languageDictionary["Translated names"] //You'll need to have translations for each of these
-        var translatedNames = Object.keys(languages); //Add these from the languageDict eventually, so that this becomes more scalable
+        var languages = languageDictionary["Translated names"] //You'll need to have translations for each of these. These are in the languageDict file
+        var translatedNames = Object.keys(languages); 
         for (language in languages){
             var $newTag = $('<h2>')
             $newTag.html(languages[language]).attr('class', 'languageButton').attr('value', language);
             $('#firstSection').append($newTag);
         };
 
-        //I've been told before that I was doing jQuery backwards, I need to re-read how and do these above functions again.
-
         var bodyHeight = parseInt($('body').css('height'));
         var topButtonHeight = parseInt($('#topButton').css('height'));
         var bannersHeight = topButtonHeight + parseInt($('#bottomButton').css('height'));
-        console.log(bodyHeight);
+        var fontRatios = {
+            h2: 0.0374,    //Ideal height of 642, font size of 24 -- 24/642
+            h3: 0.0280,    //18 -- 18/642
+            p: 0.0249      //16 -- 18/642
+        }
+        for(var fontSize in fontRatios){
+            $(fontSize).each(function(i, el){
+                $(el).css('font-size',(fontRatios[fontSize] * bodyHeight))
+            })
+        }
         $('#map').css('height', bodyHeight - bannersHeight);
-        $('#map').css('top', topButtonHeight);
+        $('#map').css('top', 0); //Not working in the stylesheet
 
         var map = L.map('map').setView([0, 0], 13); //Set the zoom level to fit in the closest 10 options, get the zoom of that and set it to that.
         //Set the tile max and min zoom options to suit the map's max and min zoom options.
@@ -27,22 +34,29 @@ $(document).ready(function(){
         }).addTo(map);
 
         var features = geoJsonData.features;
-        var markerPos = [];
+        var markerIndex = []
 
         function placeMarkers(){
-            // I may not need the below condition after some time, since the map mauy only show the GPs that apply to the user's search.
-            // But it may still be useful to provide feedback to the user for what they search for is returned.
-
+            var markerPos = [];
             //To do - add a condition to check each marker is allowed, according to the user's preferences. - Bulk billing, language.
             //This may possibly make the above condition irrelevant
-            for (j=0; j < features.length; j++){1
+            //How to make this larger?
+            for (j=0; j < features.length; j++){
                 var markerLat = features[j].geometry.coordinates[0];
                 var markerLng = features[j].geometry.coordinates[1];
-                var popupContent = '<h3>' + features[j].properties.PracticeName + '</h3>' +
-                    '<h3>Address: ' + features[j].properties.Address + '</h3>' +
-                    '<h3>Phone number: ' + features[j].properties.PhoneNumber + '</h3>'
-                var marker = L.marker([markerLng, markerLat]).bindPopup(popupContent);
+//                var popupContent = '<h3>' + features[j].properties.PracticeName + '</h3>' +
+//                    '<h3>Address: ' + features[j].properties.Address + '</h3>' +
+//                    '<h3>Phone number: ' + features[j].properties.PhoneNumber + '</h3>'
+                var marker = L.marker([markerLng, markerLat])//.bindPopup(popupContent);
+                console.log(j)
+                marker.on('click', function(e){
+                    console.log(j)
+                    $('#tooltipBackButton').css('background-color', '#FFF')
+                    //HEY!! This function below works because I know the section number.
+                    $.fn.fullpage.moveTo(5);
+                })
                 markerPos.push(marker);
+                markerIndex.push(j)
             }
             L.layerGroup(markerPos).addTo(map);
         }
@@ -108,49 +122,58 @@ $(document).ready(function(){
             updateMarkers(elemName, $elem);
         });
 
-        function moveDown(elem){
+        function moveToPage(elem, i, slide){
             $(elem).css('background-color', '#C5CACA') //Set the button to a different colour, so the user knows what they've clicked on.
             setTimeout(function(){
-                $.fn.fullpage.moveSectionDown();
-            }, 500);
+                if (slide == null){
+                    $.fn.fullpage.moveTo(i);                    
+                } else {
+                    $.fn.fullpage.moveTo(i, slide);
+                }
+            }, 400);
         }
 
         $('.languageButton').on('click',function(){
             var languageChosen = $(this).attr('value');
+            //This translation works for the entire site.
             if(languageChosen != 'English'){
                 $(".translationSmallFont").each(function (i, el) { //Seems you need i as a placeholder, so you can access the second param
                     $(el).html('')
                     var parentHtml = $(el).parent().text();
                     var translation = languageDictionary["Translated terms"][parentHtml][languageChosen];
                     $(el).html('<br>' + translation);
-                    //$(el).text(' (' + translation + ')')
                 });
             }
-            moveDown(this);
+            moveToPage(this, 3, null);
         });
 
         $('#locationButton').on('click', function(){
             map.setView([yourLng, yourLat]);
             placeMarkers();
             //Upon fail, prompt the user to enter their address, or call their case manager
-            moveDown(this);
+            moveToPage(this, 4, null);
         });
 
         $('#bottomButton').on('click', function(){
+            //$.fn.fullpage.moveToPage(4,1);
             $('.languageButton').css('background-color', '#FFF')
             $('#locationButton').css('background-color', '#FFF')        
+            $('#tooltipBackButton').css('background-color', '#FFF')
             $.fn.fullpage.moveTo(2); //Return to start
             $(".translationSmallFont").text('')
             //TO DO - Reset all vars, all functions
-        
         });
 
         $('#topButton').on('click', function(){
-            $.fn.fullpage.moveTo(1); //Return to start
+            $.fn.fullpage.moveTo(1); //Go to the about menu
         });
 
+        $('#tooltipBackButton').on('click', function(){
+            moveToPage(this, 4, null);  //HEY!! This function below works because I know the section number.
+        });
     }
 
+    //You don't need to put everything in a callback for this, since it's so small.
     $.get("languageDict.json", function(languageDictionary){
         _init_(languageDictionary)
     });
