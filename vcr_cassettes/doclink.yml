@@ -1,0 +1,213 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=300%20King%20St,%20Newtown,%20NSW&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 17 Jan 2016 13:03:25 GMT
+      Expires:
+      - Mon, 18 Jan 2016 13:03:25 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      Content-Length:
+      - '555'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "300",
+                       "short_name" : "300",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "King Street",
+                       "short_name" : "King St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Newtown",
+                       "short_name" : "Newtown",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "2042",
+                       "short_name" : "2042",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "300 King St, Newtown NSW 2042, Australia",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : -33.8967446,
+                          "lng" : 151.1795791
+                       },
+                       "southwest" : {
+                          "lat" : -33.8967543,
+                          "lng" : 151.1795644
+                       }
+                    },
+                    "location" : {
+                       "lat" : -33.8967543,
+                       "lng" : 151.1795791
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.89540046970851,
+                          "lng" : 151.1809207302915
+                       },
+                       "southwest" : {
+                          "lat" : -33.8980984302915,
+                          "lng" : 151.1782227697085
+                       }
+                    }
+                 },
+                 "place_id" : "EigzMDAgS2luZyBTdCwgTmV3dG93biBOU1cgMjA0MiwgQXVzdHJhbGlh",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 17 Jan 2016 13:03:25 GMT
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=7%20Park%20Ave,%20Blackheath,%20NSw&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 17 Jan 2016 13:03:25 GMT
+      Expires:
+      - Mon, 18 Jan 2016 13:03:25 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      Content-Length:
+      - '494'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "7",
+                       "short_name" : "7",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Park Avenue",
+                       "short_name" : "Park Ave",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Blackheath",
+                       "short_name" : "Blackheath",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "2785",
+                       "short_name" : "2785",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "7 Park Ave, Blackheath NSW 2785, Australia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : -33.635742,
+                       "lng" : 150.287396
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.6343930197085,
+                          "lng" : 150.2887449802915
+                       },
+                       "southwest" : {
+                          "lat" : -33.6370909802915,
+                          "lng" : 150.2860470197085
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJr4OwThFyEmsRIF5Kqh0JNII",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 17 Jan 2016 13:03:25 GMT
+recorded_with: VCR 3.0.1
