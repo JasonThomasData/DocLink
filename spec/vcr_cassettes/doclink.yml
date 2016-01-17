@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://maps.googleapis.com/maps/api/geocode/json?address=300%20King%20St,%20Newtown,%20NSW&language=en&sensor=false
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=300%20King%20St,%20Newtown,%20NSW&language=en&sensor=false
     body:
       encoding: US-ASCII
       string: ''
@@ -21,21 +21,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 17 Jan 2016 13:29:35 GMT
+      - Sun, 17 Jan 2016 13:38:45 GMT
       Expires:
-      - Mon, 18 Jan 2016 13:29:35 GMT
+      - Mon, 18 Jan 2016 13:38:45 GMT
       Cache-Control:
       - public, max-age=86400
       Access-Control-Allow-Origin:
       - '*'
       Server:
       - mafe
-      Content-Length:
-      - '555'
       X-Xss-Protection:
       - 1; mode=block
       X-Frame-Options:
       - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=604800; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
       string: |
@@ -109,10 +113,10 @@ http_interactions:
            "status" : "OK"
         }
     http_version: 
-  recorded_at: Sun, 17 Jan 2016 13:29:35 GMT
+  recorded_at: Sun, 17 Jan 2016 13:38:45 GMT
 - request:
     method: get
-    uri: http://maps.googleapis.com/maps/api/geocode/json?address=7%20Park%20Ave,%20Blackheath,%20NSw&language=en&sensor=false
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=7%20Park%20Ave,%20Blackheath,%20NSw&language=en&sensor=false
     body:
       encoding: US-ASCII
       string: ''
@@ -131,21 +135,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sun, 17 Jan 2016 13:29:36 GMT
+      - Sun, 17 Jan 2016 13:38:45 GMT
       Expires:
-      - Mon, 18 Jan 2016 13:29:36 GMT
+      - Mon, 18 Jan 2016 13:38:45 GMT
       Cache-Control:
       - public, max-age=86400
       Access-Control-Allow-Origin:
       - '*'
       Server:
       - mafe
-      Content-Length:
-      - '494'
       X-Xss-Protection:
       - 1; mode=block
       X-Frame-Options:
       - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=604800; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
       string: |
@@ -209,5 +217,5 @@ http_interactions:
            "status" : "OK"
         }
     http_version: 
-  recorded_at: Sun, 17 Jan 2016 13:29:36 GMT
+  recorded_at: Sun, 17 Jan 2016 13:38:45 GMT
 recorded_with: VCR 3.0.1
