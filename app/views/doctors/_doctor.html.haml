@@ -1,0 +1,4 @@
+%article.doctor{id: "#{doctor.id}"}
+  %h2= doctor.name
+  %p= doctor.address
+  %p= link_to "Call #{doctor.phone_number}", "tel:#{doctor.phone_number}"
