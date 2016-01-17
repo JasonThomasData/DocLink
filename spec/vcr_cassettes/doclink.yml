@@ -218,4 +218,103 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sun, 17 Jan 2016 13:38:45 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Newtown%20NSW&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 17 Jan 2016 13:43:43 GMT
+      Expires:
+      - Mon, 18 Jan 2016 13:43:43 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=604800; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Newtown",
+                       "short_name" : "Newtown",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Newtown NSW, Australia",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : -33.8909856,
+                          "lng" : 151.1892903
+                       },
+                       "southwest" : {
+                          "lat" : -33.9088923,
+                          "lng" : 151.1711088
+                       }
+                    },
+                    "location" : {
+                       "lat" : -33.8965493,
+                       "lng" : 151.1799632
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.8909856,
+                          "lng" : 151.1892903
+                       },
+                       "southwest" : {
+                          "lat" : -33.9088923,
+                          "lng" : 151.1711088
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJf-kHYzawEmsRcMMyFmh9AQU",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 17 Jan 2016 13:43:43 GMT
 recorded_with: VCR 3.0.1
