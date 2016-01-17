@@ -17,6 +17,12 @@ gem "normalize-rails", "~> 3.0.0"
 gem 'jbuilder', '~> 2.0'
 
 group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'growl'
+  gem 'rb-inotify', require: false
+  gem 'rack-livereload'
   gem "quiet_assets"
   gem "spring"
   gem "spring-commands-rspec"
