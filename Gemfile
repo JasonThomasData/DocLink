@@ -5,6 +5,7 @@ gem "puma"
 gem 'rails', '4.2.5'
 gem "simple_form"
 gem "title"
+gem "geocoder", "~> 1.2.14"
 
 gem "haml"
 gem 'jquery-rails'
