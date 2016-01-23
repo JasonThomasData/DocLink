@@ -29,6 +29,7 @@ group :development do
   gem "spring-commands-rspec"
   gem "web-console"
 
+  gem 'gettext', '>=3.0.2', require: false
   # For Gettext parsing of .haml files
   gem "ruby_parser", require: false
 end
