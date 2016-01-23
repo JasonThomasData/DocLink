@@ -6,6 +6,7 @@ gem 'rails', '4.2.5'
 gem "simple_form"
 gem "title"
 gem "geocoder", "~> 1.2.14"
+gem 'gettext_i18n_rails'
 
 gem "haml"
 gem 'jquery-rails'
@@ -27,6 +28,9 @@ group :development do
   gem "spring"
   gem "spring-commands-rspec"
   gem "web-console"
+
+  # For Gettext parsing of .haml files
+  gem "ruby_parser", require: false
 end
 
 group :development, :test do
