@@ -16,3 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=; plural=;\n"
 "\n"
+
+msgid "Find doctors near by"
+msgstr "ايجاد الاطباء"

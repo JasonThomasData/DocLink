@@ -1,4 +1,4 @@
 = form_tag doctors_path, method: "get" do
-  = label_tag :q, "Find doctors near by"
+  = label_tag :q, _("Find doctors near by")
   = text_field_tag :q
   = button_tag "Search", type: "submit", name: nil
