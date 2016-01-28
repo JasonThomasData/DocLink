@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  resources :doctors, only: [:index] do
-    collection do
-      get :search
+  scope "(:locale)" do
+    resources :doctors, only: [:index] do
+      collection do
+        get :search
+      end
     end
+
+    get "language", to: "language#change"
   end
 
-  get "language", to: "language#change"
-
+  get ":locale", to: "doctors#search"
   root to: "doctors#search"
 end
