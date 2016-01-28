@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     end
   end
 
+  get "language", to: "language#change"
+
   root to: "doctors#search"
 end
