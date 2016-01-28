@@ -8,7 +8,10 @@
 </head>
 <body>
 
-<%= render "doctors/doctor_search_form" %>
+<header>
+  <%= render "doctors/doctor_search_form" %>
+  <%= link_to "Change language", language_path %>
+</header>
 <%= yield %>
 
 </body>
