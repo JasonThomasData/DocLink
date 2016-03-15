@@ -15,6 +15,7 @@ gem "autoprefixer-rails"
 gem "normalize-rails", "~> 3.0.0"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem 'bitters', '~> 1.3.1'
 
 group :development do
   gem 'guard'
