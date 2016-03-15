@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "pg"
 gem "puma"
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.6'
 gem "simple_form"
 gem "title"
 gem "geocoder", "~> 1.2.14"
