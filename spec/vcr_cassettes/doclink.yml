@@ -317,4 +317,692 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sun, 17 Jan 2016 13:43:43 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Newtown%20NSW&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 25 Feb 2016 10:35:23 GMT
+      Expires:
+      - Fri, 26 Feb 2016 10:35:23 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Newtown",
+                       "short_name" : "Newtown",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Newtown NSW, Australia",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : -33.8909856,
+                          "lng" : 151.1892903
+                       },
+                       "southwest" : {
+                          "lat" : -33.9088923,
+                          "lng" : 151.1711088
+                       }
+                    },
+                    "location" : {
+                       "lat" : -33.8965493,
+                       "lng" : 151.1799632
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.8909856,
+                          "lng" : 151.1892903
+                       },
+                       "southwest" : {
+                          "lat" : -33.9088923,
+                          "lng" : 151.1711088
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJf-kHYzawEmsRcMMyFmh9AQU",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 25 Feb 2016 10:35:22 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Newtown%20NSW&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 25 Feb 2016 11:15:03 GMT
+      Expires:
+      - Fri, 26 Feb 2016 11:15:03 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Newtown",
+                       "short_name" : "Newtown",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Newtown NSW, Australia",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : -33.8909856,
+                          "lng" : 151.1892903
+                       },
+                       "southwest" : {
+                          "lat" : -33.9088923,
+                          "lng" : 151.1711088
+                       }
+                    },
+                    "location" : {
+                       "lat" : -33.8965493,
+                       "lng" : 151.1799632
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.8909856,
+                          "lng" : 151.1892903
+                       },
+                       "southwest" : {
+                          "lat" : -33.9088923,
+                          "lng" : 151.1711088
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJf-kHYzawEmsRcMMyFmh9AQU",
+                 "types" : [ "locality", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 25 Feb 2016 11:15:03 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Newtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSWNewtown%20NSW&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 25 Feb 2016 11:26:26 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - mafe
+      Content-Length:
+      - '1555'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ZW4+CiAgPG1ldGEgY2hhcnNl
+        dD11dGYtOD4KICA8bWV0YSBuYW1lPXZpZXdwb3J0IGNvbnRlbnQ9ImluaXRp
+        YWwtc2NhbGU9MSwgbWluaW11bS1zY2FsZT0xLCB3aWR0aD1kZXZpY2Utd2lk
+        dGgiPgogIDx0aXRsZT5FcnJvciA0MDAgKEJhZCBSZXF1ZXN0KSEhMTwvdGl0
+        bGU+CiAgPHN0eWxlPgogICAgKnttYXJnaW46MDtwYWRkaW5nOjB9aHRtbCxj
+        b2Rle2ZvbnQ6MTVweC8yMnB4IGFyaWFsLHNhbnMtc2VyaWZ9aHRtbHtiYWNr
+        Z3JvdW5kOiNmZmY7Y29sb3I6IzIyMjtwYWRkaW5nOjE1cHh9Ym9keXttYXJn
+        aW46NyUgYXV0byAwO21heC13aWR0aDozOTBweDttaW4taGVpZ2h0OjE4MHB4
+        O3BhZGRpbmc6MzBweCAwIDE1cHh9KiA+IGJvZHl7YmFja2dyb3VuZDp1cmwo
+        Ly93d3cuZ29vZ2xlLmNvbS9pbWFnZXMvZXJyb3JzL3JvYm90LnBuZykgMTAw
+        JSA1cHggbm8tcmVwZWF0O3BhZGRpbmctcmlnaHQ6MjA1cHh9cHttYXJnaW46
+        MTFweCAwIDIycHg7b3ZlcmZsb3c6aGlkZGVufWluc3tjb2xvcjojNzc3O3Rl
+        eHQtZGVjb3JhdGlvbjpub25lfWEgaW1ne2JvcmRlcjowfUBtZWRpYSBzY3Jl
+        ZW4gYW5kIChtYXgtd2lkdGg6NzcycHgpe2JvZHl7YmFja2dyb3VuZDpub25l
+        O21hcmdpbi10b3A6MDttYXgtd2lkdGg6bm9uZTtwYWRkaW5nLXJpZ2h0OjB9
+        fSNsb2dve2JhY2tncm91bmQ6dXJsKC8vd3d3Lmdvb2dsZS5jb20vaW1hZ2Vz
+        L2JyYW5kaW5nL2dvb2dsZWxvZ28vMXgvZ29vZ2xlbG9nb19jb2xvcl8xNTB4
+        NTRkcC5wbmcpIG5vLXJlcGVhdDttYXJnaW4tbGVmdDotNXB4fUBtZWRpYSBv
+        bmx5IHNjcmVlbiBhbmQgKG1pbi1yZXNvbHV0aW9uOjE5MmRwaSl7I2xvZ297
+        YmFja2dyb3VuZDp1cmwoLy93d3cuZ29vZ2xlLmNvbS9pbWFnZXMvYnJhbmRp
+        bmcvZ29vZ2xlbG9nby8yeC9nb29nbGVsb2dvX2NvbG9yXzE1MHg1NGRwLnBu
+        Zykgbm8tcmVwZWF0IDAlIDAlLzEwMCUgMTAwJTstbW96LWJvcmRlci1pbWFn
+        ZTp1cmwoLy93d3cuZ29vZ2xlLmNvbS9pbWFnZXMvYnJhbmRpbmcvZ29vZ2xl
+        bG9nby8yeC9nb29nbGVsb2dvX2NvbG9yXzE1MHg1NGRwLnBuZykgMH19QG1l
+        ZGlhIG9ubHkgc2NyZWVuIGFuZCAoLXdlYmtpdC1taW4tZGV2aWNlLXBpeGVs
+        LXJhdGlvOjIpeyNsb2dve2JhY2tncm91bmQ6dXJsKC8vd3d3Lmdvb2dsZS5j
+        b20vaW1hZ2VzL2JyYW5kaW5nL2dvb2dsZWxvZ28vMngvZ29vZ2xlbG9nb19j
+        b2xvcl8xNTB4NTRkcC5wbmcpIG5vLXJlcGVhdDstd2Via2l0LWJhY2tncm91
+        bmQtc2l6ZToxMDAlIDEwMCV9fSNsb2dve2Rpc3BsYXk6aW5saW5lLWJsb2Nr
+        O2hlaWdodDo1NHB4O3dpZHRoOjE1MHB4fQogIDwvc3R5bGU+CiAgPGEgaHJl
+        Zj0vL3d3dy5nb29nbGUuY29tLz48c3BhbiBpZD1sb2dvIGFyaWEtbGFiZWw9
+        R29vZ2xlPjwvc3Bhbj48L2E+CiAgPHA+PGI+NDAwLjwvYj4gPGlucz5UaGF0
+        4oCZcyBhbiBlcnJvci48L2lucz4KICA8cD5Zb3VyIGNsaWVudCBoYXMgaXNz
+        dWVkIGEgbWFsZm9ybWVkIG9yIGlsbGVnYWwgcmVxdWVzdC4gIDxpbnM+VGhh
+        dOKAmXMgYWxsIHdlIGtub3cuPC9pbnM+Cg==
+    http_version: 
+  recorded_at: Thu, 25 Feb 2016 11:26:27 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=10%20King%20st,%20Newtown%20NSW&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 25 Feb 2016 11:32:52 GMT
+      Expires:
+      - Fri, 26 Feb 2016 11:32:52 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "10",
+                       "short_name" : "10",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "King Street",
+                       "short_name" : "King St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Newtown",
+                       "short_name" : "Newtown",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "2042",
+                       "short_name" : "2042",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "10 King St, Newtown NSW 2042, Australia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : -33.8924895,
+                       "lng" : 151.1874298
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.89114051970849,
+                          "lng" : 151.1887787802915
+                       },
+                       "southwest" : {
+                          "lat" : -33.89383848029149,
+                          "lng" : 151.1860808197085
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJ9TymydKxEmsRYjFZM1GVSkQ",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 25 Feb 2016 11:32:52 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=10%20King%20st,%20Newtown%20NSW&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 25 Feb 2016 11:32:53 GMT
+      Expires:
+      - Fri, 26 Feb 2016 11:32:53 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "10",
+                       "short_name" : "10",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "King Street",
+                       "short_name" : "King St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Newtown",
+                       "short_name" : "Newtown",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "2042",
+                       "short_name" : "2042",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "10 King St, Newtown NSW 2042, Australia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : -33.8924895,
+                       "lng" : 151.1874298
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.89114051970849,
+                          "lng" : 151.1887787802915
+                       },
+                       "southwest" : {
+                          "lat" : -33.89383848029149,
+                          "lng" : 151.1860808197085
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJ9TymydKxEmsRYjFZM1GVSkQ",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 25 Feb 2016 11:32:54 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=33%20Liverpool%20Rd,%20Ashfield%20NSW%202131&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 25 Feb 2016 11:43:49 GMT
+      Expires:
+      - Fri, 26 Feb 2016 11:43:49 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "33",
+                       "short_name" : "33",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Liverpool Road",
+                       "short_name" : "Liverpool Rd",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Ashfield",
+                       "short_name" : "Ashfield",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "2131",
+                       "short_name" : "2131",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "33 Liverpool Rd, Ashfield NSW 2131, Australia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : -33.886937,
+                       "lng" : 151.136907
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.8855880197085,
+                          "lng" : 151.1382559802915
+                       },
+                       "southwest" : {
+                          "lat" : -33.8882859802915,
+                          "lng" : 151.1355580197085
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJ13myJaG6EmsRmGbQXl0b99E",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 25 Feb 2016 11:43:48 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=33%20Liverpool%20Rd,%20Ashfield%20NSW%202131&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 25 Feb 2016 11:43:49 GMT
+      Expires:
+      - Fri, 26 Feb 2016 11:43:49 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "33",
+                       "short_name" : "33",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Liverpool Road",
+                       "short_name" : "Liverpool Rd",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Ashfield",
+                       "short_name" : "Ashfield",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "New South Wales",
+                       "short_name" : "NSW",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "Australia",
+                       "short_name" : "AU",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "2131",
+                       "short_name" : "2131",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "33 Liverpool Rd, Ashfield NSW 2131, Australia",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : -33.886937,
+                       "lng" : 151.136907
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : -33.8855880197085,
+                          "lng" : 151.1382559802915
+                       },
+                       "southwest" : {
+                          "lat" : -33.8882859802915,
+                          "lng" : 151.1355580197085
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJ13myJaG6EmsRmGbQXl0b99E",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 25 Feb 2016 11:43:49 GMT
 recorded_with: VCR 3.0.1
