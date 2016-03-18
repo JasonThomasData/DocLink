@@ -2,4 +2,5 @@
   %h2= doctor.name
   %p= distance_in_words(doctor.distance) if @q
   %p= doctor.address
-  %p= link_to "Call #{doctor.phone_number}", "tel:#{doctor.phone_number}"
+  - if doctor.phone_number
+    %p= link_to "Call #{doctor.phone_number}", "tel:#{doctor.phone_number}"
