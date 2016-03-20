@@ -26,3 +26,10 @@ dd {
     padding: $small-spacing 0;
   }
 }
+
+.doctors-list {
+  .doctor {
+    border-bottom: $base-border;
+    padding-top: $small-spacing;
+  }
+}
