@@ -20,4 +20,8 @@ body {
   @extend [type='button'];
   padding-right: $small-spacing;
   padding-left: $small-spacing;
+  position: fixed;
+  right: $small-spacing;
+  bottom: $small-spacing;
+  left: $small-spacing;
 }
