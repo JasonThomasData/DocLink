@@ -81,3 +81,27 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+.search-form-compact {
+  .input-group {
+    display: flex;
+  }
+
+  [type="search"] {
+    margin-bottom: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  [type="submit"] {
+    padding-right: $small-spacing;
+    padding-left: $small-spacing;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    @media only screen and (min-width: $medium-screen) {
+      padding-right: $base-spacing;
+      padding-left: $base-spacing;
+    }
+  }
+}

@@ -1,5 +1,6 @@
-= form_tag doctors_path, method: "get" do
+= form_tag doctors_path, method: "get", class: "search-form-compact" do
   = label_tag :q, t(:find_doctors_label)
-  = search_field_tag :q
-  = button_tag "Search", type: "submit", name: nil
+  .input-group
+    = search_field_tag :q
+    = button_tag "Search", type: "submit", name: nil
 
