@@ -6,7 +6,7 @@ feature "User changes language" do
 
     expect(page).to have_content "Find doctors near by"
 
-    click_link "Change language"
+    click_link "Translate this site"
     click_link "العربية"
 
     expect(page).to have_content "ايجاد الاطباء"
