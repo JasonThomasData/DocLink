@@ -17,11 +17,11 @@ body {
 }
 
 .translation-link {
-  @extend [type='button'];
-  padding-right: $small-spacing;
-  padding-left: $small-spacing;
+  background-color: $light-gray;
+  border-radius: 0;
+  padding: $small-spacing / 2 $small-spacing;
   position: fixed;
-  right: $small-spacing;
-  bottom: $small-spacing;
-  left: $small-spacing;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
