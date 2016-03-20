@@ -1,0 +1,5 @@
+%header.site-header
+  = render "doctors/doctor_search_form"
+%main.main-content
+  = yield
+= link_to "Translate this site", language_path, class: "translation-link button"
