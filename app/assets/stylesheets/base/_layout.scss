@@ -15,3 +15,9 @@ body {
 .site-header {
   margin-bottom: $base-spacing;
 }
+
+.translation-link {
+  @extend [type='button'];
+  padding-right: $small-spacing;
+  padding-left: $small-spacing;
+}
