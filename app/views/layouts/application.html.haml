@@ -18,4 +18,5 @@
     %header.site-header
       = render "doctors/doctor_search_form"
       = link_to "Change language", language_path
-    = yield
+    %main.main-content
+      = yield
