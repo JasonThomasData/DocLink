@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  padding: $small-spacing;
+  padding: $small-spacing $small-spacing $base-spacing * 3;
 }
 
 .site-header {
