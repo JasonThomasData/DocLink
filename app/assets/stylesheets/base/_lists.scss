@@ -17,3 +17,12 @@ dt {
 dd {
   margin: 0;
 }
+
+.language-options-list {
+  a {
+    display: block;
+    font-size: modular-scale(1);
+    border-top: $base-border;
+    padding: $small-spacing 0;
+  }
+}
