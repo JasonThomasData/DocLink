@@ -15,7 +15,7 @@
         window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')
 
   %body
-    %header
+    %header.site-header
       = render "doctors/doctor_search_form"
       = link_to "Change language", language_path
     = yield
