@@ -17,6 +17,6 @@
   %body
     %header.site-header
       = render "doctors/doctor_search_form"
-      = link_to "Change language", language_path
     %main.main-content
       = yield
+    = link_to "Change language", language_path, class: "translation-link button"
