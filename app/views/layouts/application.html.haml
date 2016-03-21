@@ -1,2 +1,5 @@
-= render "shared/html_head"
-= yield
+!!! 5
+%html.no-js{lang: I18n.locale}
+  = render "shared/html_head"
+  %body
+    = yield
