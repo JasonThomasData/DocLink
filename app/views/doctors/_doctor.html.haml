@@ -2,7 +2,7 @@
   %article.doctor-item{id: "doctor_#{doctor.id}"}
     %header
       %h2= doctor.name
-      %p= distance_in_words(doctor.distance) if @q
+      %p= distance_with_unit(doctor.distance) if @q
     %p= doctor.address
     - if doctor.phone_number
       %p= link_to "Call #{doctor.phone_number}", "tel:#{doctor.phone_number}"

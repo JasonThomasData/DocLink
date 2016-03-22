@@ -24,7 +24,7 @@ feature "User finds a doctor" do
       expect(page).to have_content close_doctor.name
       expect(page).to have_content close_doctor.phone_number
       expect(page).to have_content close_doctor.address
-      expect(page).to have_content "865 m away"
+      expect(page).to have_content "865 m"
       expect(page).to_not have_content far_doctor.name
       expect(page).to_not have_content far_doctor.phone_number
     end
