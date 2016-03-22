@@ -30,4 +30,9 @@ dd {
 .doctor-item {
   border-bottom: $base-border;
   padding-top: $small-spacing;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
