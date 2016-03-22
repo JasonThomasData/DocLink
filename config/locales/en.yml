@@ -22,3 +22,4 @@
 en:
   hello: "Hello world"
   find_doctors_label: "Find doctors near by"
+  search_placeholder: "Your address or suburb"
