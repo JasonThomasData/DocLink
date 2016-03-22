@@ -1,5 +1,5 @@
 %li
-  %article.doctor{id: "#{doctor.id}"}
+  %article.doctor{id: "doctor_#{doctor.id}"}
     %h2= doctor.name
     %p= distance_in_words(doctor.distance) if @q
     %p= doctor.address
