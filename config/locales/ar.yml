@@ -1,6 +1,5 @@
 # Arabic translations
 ar:
   find_doctors_label: "ايجاد الاطباء"
-  # FIXME: Add translation
-  search_placeholder: "Your address or suburb"
+  search_placeholder: "Your address or suburb" # FIXME: Add translation
   search_submit_text: "بحث" # TODO: check translation
