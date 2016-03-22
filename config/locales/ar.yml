@@ -3,3 +3,4 @@ ar:
   find_doctors_label: "ايجاد الاطباء"
   # FIXME: Add translation
   search_placeholder: "Your address or suburb"
+  search_submit_text: "بحث" # TODO: check translation
