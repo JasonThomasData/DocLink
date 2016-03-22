@@ -1,6 +1,10 @@
 %header.site-header
   = render "doctors/doctor_search_form"
 %main.main-content
+  - if @q
+    %p.results-summary
+      - # TODO: What if there's no doctors?
+      We found doctors #{@doctors.length} nearby:
   %ul.doctors-list
     = render @doctors
 = render "shared/translate_link"
