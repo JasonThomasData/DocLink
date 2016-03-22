@@ -9,4 +9,8 @@ module DoctorsHelper
       distance + " m"
     end
   end
+
+  def display_address(address)
+    address.sub(/, Australia$/,"").sub(/, NSW/,"")
+  end
 end
