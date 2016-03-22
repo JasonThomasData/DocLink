@@ -27,9 +27,7 @@ dd {
   }
 }
 
-.doctors-list {
-  .doctor {
-    border-bottom: $base-border;
-    padding-top: $small-spacing;
-  }
+.doctor-item {
+  border-bottom: $base-border;
+  padding-top: $small-spacing;
 }
