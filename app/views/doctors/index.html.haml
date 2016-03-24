@@ -5,7 +5,7 @@
   - if @q
     %h1.results-summary
       - # TODO: What if there's no doctors?
-      We found doctors #{@doctors.length} nearby:
+      We found #{@doctors.length} doctors near #{@q}:
   %ul.doctors-list
     = render @doctors
 = render "shared/translate_link"
