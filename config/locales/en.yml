@@ -20,7 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
   app_purpose: "Find doctors near you"
   search_label: "What’s your location?"
   search_placeholder: "Your address or suburb"
