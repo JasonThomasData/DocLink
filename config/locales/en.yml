@@ -21,6 +21,7 @@
 
 en:
   hello: "Hello world"
-  find_doctors_label: "Find doctors near by"
+  app_purpose: "Find doctors near by"
+  search_label: "What’s your location?"
   search_placeholder: "Your address or suburb"
   search_submit_text: "Search"

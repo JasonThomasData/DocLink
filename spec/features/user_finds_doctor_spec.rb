@@ -18,7 +18,7 @@ feature "User finds a doctor" do
       )
 
       visit search_doctors_path
-      fill_in "Find doctors near by", with: "10 King st, Newtown NSW"
+      fill_in "What’s your location", with: "10 King st, Newtown NSW"
       click_button "Search"
 
       expect(page).to have_content close_doctor.name
