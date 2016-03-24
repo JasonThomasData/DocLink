@@ -33,9 +33,9 @@ describe DoctorsHelper do
 
   describe "#map_link" do
     it { expect(helper.map_link("300 King St, Newtown, NSW")).
-           to eq %(<a title="View this doctor in Google Maps" href="https://www.google.com.au/maps/place/300+King+St,+Newtown,+NSW/">Map</a>) }
+           to eq %(<a title="View this doctor in Google Maps" class="doctor-link-map" href="https://www.google.com.au/maps/place/300+King+St,+Newtown,+NSW/">Map</a>) }
     it { expect(helper.map_link("5 Erskineville Rd, Erskineville")).
-           to eq %(<a title="View this doctor in Google Maps" href="https://www.google.com.au/maps/place/5+Erskineville+Rd,+Erskineville/\">Map</a>) }
+           to eq %(<a title="View this doctor in Google Maps" class="doctor-link-map" href="https://www.google.com.au/maps/place/5+Erskineville+Rd,+Erskineville/\">Map</a>) }
   end
 end
 
