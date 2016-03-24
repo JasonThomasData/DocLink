@@ -4,7 +4,7 @@ feature "User changes language" do
   scenario "successfully" do
     visit root_path
 
-    expect(page).to have_content "Find doctors near by"
+    expect(page).to have_content "Find doctors near you"
 
     click_link "Translate this site"
     click_link "العربية"
