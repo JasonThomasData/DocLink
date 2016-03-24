@@ -1,6 +1,6 @@
 # Arabic translations
 ar:
-  app_purpose: "ايجاد الاطباء"
+  app_purpose: "ايجاد الاطباء" # TODO: is this focsed on the human “you”?
   search_label: "What’s your location?" # FIXME: Add translation
   search_placeholder: "Your address or suburb" # FIXME: Add translation
   search_submit_text: "بحث" # TODO: check translation
