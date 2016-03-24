@@ -13,4 +13,10 @@ module DoctorsHelper
   def display_address(address)
     address.sub(/, Australia$/,"").sub(/, NSW/,"")
   end
+
+  def map_link(address)
+    link_to "Map",
+            "https://www.google.com.au/maps/place/#{address.gsub(" ", "+")}/",
+            title: "View this doctor in Google Maps"
+  end
 end
