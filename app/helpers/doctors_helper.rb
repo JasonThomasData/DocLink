@@ -15,9 +15,9 @@ module DoctorsHelper
   end
 
   def map_link(address)
-    link_to "View map",
+    link_to t("map_link.text"),
             "https://www.google.com.au/maps/place/#{address.gsub(" ", "+")}/",
-            title: "View this doctor in Google Maps",
+            title: t("map_link.title"),
             class: "doctor-link-map"
   end
 end
