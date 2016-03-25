@@ -21,9 +21,10 @@
 
 en:
   app_purpose: "Find doctors near you"
+  doctor_search:
+    label: "What’s your location?"
+    placeholder: "Your address or suburb"
+    submit_text: "Search"
   map_link:
     text: "View map"
     title: "View this doctor in Google Maps"
-  search_label: "What’s your location?"
-  search_placeholder: "Your address or suburb"
-  search_submit_text: "Search"
