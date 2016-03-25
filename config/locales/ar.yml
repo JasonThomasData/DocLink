@@ -2,8 +2,8 @@
 ar:
   app_purpose: "ايجاد الاطباء" # TODO: is this focsed on the human “you”?
   doctor_search:
-    label: "What’s your location?" # FIXME: Add translation
-    placeholder: "Your address or suburb" # FIXME: Add translation
+    label: "ما هو موقعك؟" # TODO: check translation
+    placeholder: "عنوانك أو ضاحية هنا" # TODO: check translation
     submit_text: "بحث" # TODO: check translation
   map_link:
     text: "عرض الخريطة" # TODO: check translation
