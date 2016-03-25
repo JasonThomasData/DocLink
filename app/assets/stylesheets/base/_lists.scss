@@ -40,4 +40,24 @@ dd {
     text-align: right;
     width: 6em;
   }
+
+  .doctor-location-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    p {
+      margin-right: $base-spacing;
+    }
+  }
+
+  .doctor-link-map {
+    display: inline-block;
+    text-align: right;
+    white-space: nowrap;
+    font-size: modular-scale(-1);
+    margin-bottom: $base-spacing;
+    padding: $small-spacing / 2;
+    background-color: $light-gray;
+  }
 }
