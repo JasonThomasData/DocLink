@@ -21,12 +21,12 @@ feature "User finds a doctor" do
       fill_in "What’s your location", with: "10 King st, Newtown NSW"
       click_button "Search"
 
-      expect(page).to have_content close_doctor.name
-      expect(page).to have_content close_doctor.phone_number
+      expect(page).to have_content "Doctor Jason"
+      expect(page).to have_content "95169889"
       expect(page).to have_content "300 King St, Newtown"
       expect(page).to have_content "865 m"
-      expect(page).to_not have_content far_doctor.name
-      expect(page).to_not have_content far_doctor.phone_number
+      expect(page).to_not have_content "Doctor Fatima"
+      expect(page).to_not have_content "0406563694"
     end
   end
 end
