@@ -1,7 +1,7 @@
 # Arabic translations
 ar:
   app_purpose: "ايجاد الاطباء" # TODO: is this focsed on the human “you”?
-  doctor_search:
+  doctor_search_form:
     label: "ما هو موقعك؟" # TODO: check translation
     placeholder: "عنوانك أو ضاحية هنا" # TODO: check translation
     submit_text: "بحث" # TODO: check translation

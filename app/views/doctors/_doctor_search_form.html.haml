@@ -1,6 +1,6 @@
 = form_tag doctors_path, method: "get", class: "search-form-compact" do
-  = label_tag :q, t("doctor_search.label")
+  = label_tag :q, t("doctor_search_form.label")
   .input-group
-    = search_field_tag :q, @q, placeholder: t("doctor_search.placeholder")
-    = button_tag t("doctor_search.submit_text"), type: "submit", name: nil
+    = search_field_tag :q, @q, placeholder: t("doctor_search_form.placeholder")
+    = button_tag t("doctor_search_form.submit_text"), type: "submit", name: nil
 
