@@ -1,10 +1,6 @@
 module DoctorsHelper
   def search_results_summary_sentence(query, result_count)
-    if result_count.zero?
-      "Sorry we don’t know of any doctors near #{query}."
-    else
-      "We found #{ pluralize(result_count, "doctor") } near #{query}:"
-    end
+    t("search_results_summary", count: result_count, query: query)
   end
 
   def distance_with_unit(km)

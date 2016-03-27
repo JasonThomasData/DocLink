@@ -24,7 +24,7 @@ feature "User changes language" do
       click_link "Translate this site"
       click_link "العربية"
 
-      expect(page).to have_content "300 King St, Newtown عرض الخريطة"
+      expect(page).to have_content "وجدنا 1 طبيب بالقرب Newtown NSW:"
     end
   end
 end

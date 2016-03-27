@@ -28,3 +28,7 @@ en:
   map_link:
     text: "View map"
     title: "View this doctor in Google Maps"
+  search_results_summary:
+    zero: "Sorry we don’t know of any doctors near %{query}."
+    one: "We found %{count} doctor near %{query}:"
+    other: "We found %{count} doctors near %{query}:"
