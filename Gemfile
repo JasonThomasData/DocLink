@@ -6,6 +6,7 @@ gem 'rails', '4.2.6'
 gem "simple_form"
 gem "title"
 gem "geocoder", "~> 1.2.14"
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x'
 
 gem "haml"
 gem 'jquery-rails'
