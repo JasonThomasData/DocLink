@@ -9,7 +9,7 @@ feature "User changes language" do
     click_link "Translate this site"
     click_link "العربية"
 
-    expect(page).to have_content "ايجاد الاطباء"
+    expect(page).to have_content "البحث عن الأطباء بالقرب منك"
   end
 
   scenario "successfully from search results page" do
