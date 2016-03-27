@@ -1,8 +1,4 @@
 module DoctorsHelper
-  def search_results_summary_sentence(query, result_count)
-    t("search_results_summary", count: result_count, query: query)
-  end
-
   def distance_with_unit(km)
     if km >= 1
       distance = km.round(1).to_s.sub(".0", "")

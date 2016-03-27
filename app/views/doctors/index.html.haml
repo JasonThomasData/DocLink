@@ -4,8 +4,7 @@
 %main.main-content
   - if @q
     %h1.results-summary
-      - # TODO: What if there's no doctors?
-      #{search_results_summary_sentence(@q, @doctors.length)}
+      = t("search_results_summary", count: @doctors.length, query: @q)
   %ul.doctors-list
     = render @doctors
 = render "shared/translate_link"

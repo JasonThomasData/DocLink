@@ -1,17 +1,6 @@
 require 'rails_helper'
 
 describe DoctorsHelper do
-  describe "#search_results_summary_sentence" do
-    it { expect(helper.search_results_summary_sentence("Newtown NSW", 0)).
-           to eql t("search_results_summary", count: 0, query: "Newtown NSW") }
-
-    it { expect(helper.search_results_summary_sentence("12 Burwood Rd, Belmore", 1)).
-           to eql t("search_results_summary", count: 1, query: "12 Burwood Rd, Belmore") }
-
-    it { expect(helper.search_results_summary_sentence("Blacktown", 12)).
-           to eql t("search_results_summary", count: 12, query: "Blacktown") }
-  end
-
   describe "#distance_with_unit" do
     it { expect(helper.distance_with_unit(2)).to eq "2 km" }
     it { expect(helper.distance_with_unit(3)).to eq "3 km" }
