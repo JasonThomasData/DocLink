@@ -4,7 +4,7 @@ class DoctorsController < ApplicationController
 
     if @q
       # TODO: Set this distance to something useful to people
-      @doctors = Doctor.near(@q, 10)
+      @doctors = Doctor.near(@q, 4)
     else
       @doctors = Doctor.all
     end
