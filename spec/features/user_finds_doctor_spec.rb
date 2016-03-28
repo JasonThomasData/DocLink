@@ -18,7 +18,7 @@ feature "User finds a doctor" do
       )
 
       visit search_doctors_path
-      fill_in "What’s your location", with: "10 King st, Newtown NSW"
+      fill_in I18n.t("doctor_search_form.label"), with: "10 King st, Newtown NSW"
       click_button "Search"
 
       expect(page).to have_content "Doctor Jason"
