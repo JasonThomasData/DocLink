@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe LanguagesHelper do
+describe TranslationsHelper do
   describe "#previous_path_with_locale" do
     context "when there is a previous query" do
       it "is the path for that doctor search" do

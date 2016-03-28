@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "User changes language" do
+feature "User translates site" do
   scenario "successfully" do
     visit root_path
 
