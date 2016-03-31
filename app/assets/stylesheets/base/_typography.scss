@@ -17,6 +17,11 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
+.site-title {
+  @extend h1;
+  font-weight: bold;
+}
+
 p {
   margin: 0 0 $small-spacing;
 }
