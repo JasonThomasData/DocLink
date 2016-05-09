@@ -1,0 +1,10 @@
+%li
+  %article.doctor-item{id: "doctor_#{doctor.id}"}
+    %header
+      %h2= doctor.name
+      %span.doctor-distance= distance_with_unit(doctor.distance) if @q
+    .doctor-location-block
+      %p= display_address(doctor.address)
+      = map_link(doctor.address)
+    - if doctor.phone_number
+      %p= link_to "Call #{doctor.phone_number}", "tel:#{doctor.phone_number}"

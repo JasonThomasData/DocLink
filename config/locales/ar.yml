@@ -1,0 +1,16 @@
+# Arabic translations
+ar:
+  app_purpose: "البحث عن الأطباء بالقرب منك" # TODO: check translation
+  doctor_search_form:
+    label: "ما هو موقعك؟" # TODO: check translation
+    placeholder: "عنوانك أو ضاحية هنا" # TODO: check translation
+    submit_text: "بحث" # TODO: check translation
+  map_link:
+    text: "عرض الخريطة" # TODO: check translation
+    title: "عرض هذا الطبيب في خرائط Google" # TODO: check translation
+  search_results_summary: # TODO: check translation
+    zero: "عذرا نحن لا نعرف من أي الأطباء قرب %{query}:"
+    one: "وجدنا %{count} طبيب بالقرب %{query}:"
+    two: "لقد وجدنا %{count} من الأطباء قرب %{query}:"
+    few: "لقد وجدنا %{count} الأطباء قرب %{query}:"
+    many: "لقد وجدنا %{count} طبيبا قرب %{query}:"
