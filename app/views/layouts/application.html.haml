@@ -3,4 +3,6 @@
   = render "shared/html_head"
   %body
     = yield
-    = render "shared/translate_link"
+    %nav.footer-navigation
+      = render "shared/translate_link"
+      = link_to "About this project", about_path
