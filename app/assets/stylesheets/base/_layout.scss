@@ -29,5 +29,9 @@ body {
     padding: $small-spacing / 2 $small-spacing;
     display: block;
     flex: 1;
+
+    + a {
+      border-left: .125em solid lighten($light-gray, 10%);
+    }
   }
 }
