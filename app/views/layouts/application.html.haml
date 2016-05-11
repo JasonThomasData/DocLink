@@ -4,5 +4,9 @@
   %body
     = yield
     %nav.footer-navigation
-      = link_to "Translate this site", translate_path
+      = link_to_unless_current "Translate this site", translate_path do
+        - if @previous_query
+          = link_to "Back", doctors_path(q: @previous_query)
+        - else
+          = link_to "Back", root_path
       = link_to "About this project", about_path
