@@ -38,7 +38,7 @@ A Rails app optimised for phone, also available on PC. Not all users will be on 
 
 We are using Rails because it has a lot of the features we need.
 
-The original map prototype was a JavaScript page, and you can see that version in [previous commits].(https://github.com/JasonThomasData/DocLink/tree/647fcda5701d444ce19b5a1bf916492d0fafbfdc)
+The original map prototype was a JavaScript page, and you can see that version in [previous commits](https://github.com/JasonThomasData/DocLink/tree/647fcda5701d444ce19b5a1bf916492d0fafbfdc)
 
 For the language translation, this app will use actual translations by actual translators. We have ideas about where to do this, mainly via SBS, who have stated their wish to be involved in some way.
 
@@ -74,11 +74,61 @@ The user options are reflected in the URL, which means if a service provider fin
 
 ###Usage and installation
 
-This project uses ```Ruby 4.2.6``` and the production version will run on a Heroku account. Most development has been on Apple Mac and Ubuntu machines.
+This project uses ```Ruby 2.2.4``` and the production version will run on a Heroku account. Most development has been on Apple Mac and Ubuntu machines.
 
-This uses ```PostgreSQL``` to manage doctor data.
+Using a Linux machine, these commands will get the project to a working state (this was the process I used on a new Linux machine recently).
 
-All other requirements can be seen in the Gemfile.
+First, clone this repo to your machine ```git clone https://github.com/JasonThomasData/DocLink.git```
+
+```sudo apt-get update```
+
+Go and get RVM installed. You'll need this run the version of ruby we run. Read this - https://rvm.io/rvm/install
+
+```rvm use 2.2.4```
+
+If that fails, because that version is not installed. To install it:
+
+```rvm install ruby-2.2.4```
+
+```rvm gemset install global```
+
+```rvm gemset use global```
+
+The below packages are required for Nokogiri:
+
+```sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion```
+
+These are required for PostgresSQL:
+
+```sudo apt-get install postgresql postgresql-contrib libpq-dev```
+
+This is required for json 1.8.3:
+
+```sudo apt-get install ruby-dev```
+
+This is one way to enable the uglifier gem to work. See here for more details - http://stackoverflow.com/questions/34420554/there-was-an-error-while-trying-to-load-the-gem-uglifier-bundlergemrequire
+
+```sudo apt-get install nodejs```
+
+```sudo apt-get install bundler```
+
+This will install all the gems we use:
+
+```bundle```
+
+####Installing and using PostgreSQL
+
+This is a really good read on how to do this with a Linux machine - https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04
+
+Here's a watered-down version (be sure to replace pguser with your actual user name):
+
+```sudo -u postgres createuser -s pguser```
+
+Make sure you're in the project directory, then run: 
+
+```rake db:create```
+
+```rake db:migrate```
 
 ###Concerns and issues overcome
 
