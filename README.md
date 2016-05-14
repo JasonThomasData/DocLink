@@ -78,43 +78,44 @@ This project uses ```Ruby 2.2.4``` and the production version will run on a Hero
 
 Using a Linux machine, these commands will get the project to a working state (this was the process I used on a new Linux machine recently).
 
-First, clone this repo to your machine ```git clone https://github.com/JasonThomasData/DocLink.git```
+First, clone this repo to your machine 
 
-```sudo apt-get update```
+    git clone https://github.com/JasonThomasData/DocLink.git
+
+Update your package download definitions
+
+    sudo apt-get update
 
 Go and get RVM installed. You'll need this run the version of ruby we run. Read this - https://rvm.io/rvm/install
 
-```rvm use 2.2.4```
+    rvm use 2.2.4
 
 If that fails, because that version is not installed. To install it:
 
-```rvm install ruby-2.2.4```
-
-```rvm gemset install global```
-
-```rvm gemset use global```
+    rvm install ruby-2.2.4
+    rvm gemset install global
+    rvm gemset use global
 
 The below packages are required for Nokogiri:
 
-```sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion```
+    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
 
 These are required for PostgresSQL:
 
-```sudo apt-get install postgresql postgresql-contrib libpq-dev```
+    sudo apt-get install postgresql postgresql-contrib libpq-dev
 
 This is required for json 1.8.3:
 
-```sudo apt-get install ruby-dev```
+    sudo apt-get install ruby-dev
 
 This is one way to enable the uglifier gem to work. See here for more details - http://stackoverflow.com/questions/34420554/there-was-an-error-while-trying-to-load-the-gem-uglifier-bundlergemrequire
 
-```sudo apt-get install nodejs```
-
-```sudo apt-get install bundler```
+    sudo apt-get install nodejs
 
 This will install all the gems we use:
 
-```bundle````
+    sudo apt-get install bundler
+    bundle
 
 ####Installing and using PostgreSQL
 
@@ -122,13 +123,13 @@ This is a really good read on how to do this with a Linux machine - https://www.
 
 Here's a watered-down version (be sure to replace pguser with your actual user name):
 
-```sudo -u postgres createuser -s pguser```
+    sudo -u postgres createuser -s pguser
 
 Make sure you're in the project directory, then run: 
 
-```rake db:create```
+    rake db:create
 
-```rake db:migrate```
+    rake db:migrate
 
 ###Concerns and issues overcome
 
