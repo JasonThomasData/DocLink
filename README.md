@@ -114,7 +114,7 @@ This is one way to enable the uglifier gem to work. See here for more details - 
 
 This will install all the gems we use:
 
-```bundle```
+```bundle````
 
 ####Installing and using PostgreSQL
 
