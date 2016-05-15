@@ -1,9 +1,25 @@
 module TranslationsHelper
-  def previous_path_with_locale(previous_query = nil, locale = nil)
-    if previous_query.present?
-      doctors_path(locale: locale, q: previous_query)
-    else
-      root_path(locale: locale)
+  def previous_path_with_locale(previous_path = nil, locale = nil)
+    path = "/"
+    path += previous_path[1..-1] if previous_path
+
+    if locale
+      path = strip_locale_from_path(path)
+      path.prepend("/" + locale.to_s)
     end
+
+    path
+  end
+
+  def strip_locale_from_path(path)
+    available_locales = I18n.available_locales.map { |l| l.to_s }
+
+    chunks = path.split("/").drop_while { |c| c.blank? }
+
+    available_locales.each do |locale|
+      chunks = chunks.drop(1) if chunks.first.eql? locale
+    end
+
+    chunks.join("/").prepend("/")
   end
 end
