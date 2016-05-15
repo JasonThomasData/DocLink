@@ -20,6 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  about_page_title: "About this project"
   app_purpose: "Find doctors near you"
   doctor_search_form:
     label: "Where are you?"

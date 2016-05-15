@@ -36,6 +36,6 @@ feature "User translates site" do
     click_link "Translate this"
     click_link "العربية"
 
-    expect(page).to have_content "About this project"
+    expect(page).to have_content "حول هذا المشروع"
   end
 end
