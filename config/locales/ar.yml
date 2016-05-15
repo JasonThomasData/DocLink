@@ -5,6 +5,8 @@ ar:
     label: "ما هو موقعك؟" # TODO: check translation
     placeholder: "عنوانك أو ضاحية هنا" # TODO: check translation
     submit_text: "بحث" # TODO: check translation
+  link_to_about_page: "حول هذا المشروع" # TODO: check translation
+  link_to_search_page: "بحث"
   map_link:
     text: "عرض الخريطة" # TODO: check translation
     title: "عرض هذا الطبيب في خرائط Google" # TODO: check translation

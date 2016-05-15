@@ -6,5 +6,5 @@
     %nav.footer-navigation
       = link_to_unless_current "Translate this", translate_path do
         = link_to "Back", previous_path_with_locale(@previous_path, I18n.locale)
-      = link_to_unless_current "About project", about_path do
-        = link_to "Search", root_path
+      = link_to_unless_current t("link_to_about_page"), about_path do
+        = link_to t("link_to_search_page"), root_path

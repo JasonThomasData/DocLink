@@ -25,6 +25,8 @@ en:
     label: "Where are you?"
     placeholder: "Your address or suburb"
     submit_text: "Search"
+  link_to_about_page: "About project"
+  link_to_search_page: "Search"
   map_link:
     text: "View map"
     title: "View this doctor in Google Maps"
