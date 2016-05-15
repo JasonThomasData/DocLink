@@ -10,7 +10,4 @@
         - else
           = link_to "Back", root_path
       = link_to_unless_current "About project", about_path do
-        - if @previous_query
-          = link_to "Back", doctors_path(q: @previous_query)
-        - else
-          = link_to "Back", root_path
+        = link_to "Search", root_path
