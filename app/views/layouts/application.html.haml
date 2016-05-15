@@ -5,9 +5,6 @@
     = yield
     %nav.footer-navigation
       = link_to_unless_current "Translate this", translate_path do
-        - if @previous_path
-          = link_to "Back", previous_path_with_locale(@previous_path, I18n.locale)
-        - else
-          = link_to "Back", root_path
+        = link_to "Back", previous_path_with_locale(@previous_path, I18n.locale)
       = link_to_unless_current "About project", about_path do
         = link_to "Search", root_path
