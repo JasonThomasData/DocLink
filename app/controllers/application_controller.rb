@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_filter :set_locale
-  after_filter :store_previous_query
+  after_filter :store_previous_path
 
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
@@ -14,13 +14,7 @@ class ApplicationController < ActionController::Base
       { locale: I18n.locale }.merge options
   end
 
-  def store_previous_query
-    if request.path.include? "/doctors"
-      # TODO: This will return nil for "/doctors" with no query.
-      #       Is that the desired behaviour? Would "" be better?
-      session[:previous_query] = request.query_parameters[:q]
-    else
-      session[:previous_query] = nil
-    end
+  def store_previous_path
+    session[:previous_path] = request.fullpath
   end
 end

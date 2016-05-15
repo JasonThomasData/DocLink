@@ -32,4 +32,18 @@ describe TranslationsHelper do
       end
     end
   end
+
+  describe "#strip_locale_from_path" do
+    it { expect(strip_locale_from_path("/about")).to eq "/about" }
+    it { expect(strip_locale_from_path("/en/about")).to eq "/about" }
+    it { expect(strip_locale_from_path("/ar/about")).to eq "/about" }
+    it { expect(strip_locale_from_path("/entrance")).to eq "/entrance" }
+    it { expect(strip_locale_from_path("/arbicle/ar")).to eq "/arbicle/ar" }
+    it { expect(strip_locale_from_path("/ar/")).to eq "/" }
+    it { expect(strip_locale_from_path("/ar")).to eq "/" }
+
+    it "does not strip unavailable locales" do
+      expect(strip_locale_from_path("/uk")).to eq "/uk"
+    end
+  end
 end
