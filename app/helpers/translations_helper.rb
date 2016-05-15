@@ -1,7 +1,6 @@
 module TranslationsHelper
   def previous_path_with_locale(previous_path = nil, locale = nil)
-    path = "/"
-    path += previous_path[1..-1] if previous_path
+    path = previous_path ? previous_path : "/"
 
     if locale
       path = strip_locale_from_path(path)
