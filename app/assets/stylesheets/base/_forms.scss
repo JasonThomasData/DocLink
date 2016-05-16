@@ -87,6 +87,15 @@ select {
     display: flex;
   }
 
+  [type="search"],
+  [type="submit"] {
+    font-size: $base-font-size * .8125;
+
+    @media only screen and (min-width: $small-screen) {
+      font-size: $base-font-size;
+    }
+  }
+
   [type="search"] {
     margin-bottom: 0;
     border-top-right-radius: 0;
