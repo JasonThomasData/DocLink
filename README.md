@@ -131,6 +131,17 @@ Make sure you're in the project directory, then run:
 
     rake db:migrate
 
+####Adding Doctors to the database
+
+There isn’t any fancy backend to this yet, so you’ll just have to add Doctors through the Rails console:
+
+    > ./bin/rails console
+    >> Doctor.create(
+    >>   name: "Doctor Jane Yang",
+    >>   address: "86 Gowrie st, Newtown, NSW 2042, Australia",
+    >>   phone_number: "02 9876 5432"
+    >> )
+
 ###Concerns and issues overcome
 
 The design and goals for this app have changed overtime, after careful consideration of what the problem was, what the solution is and who this benefits.
