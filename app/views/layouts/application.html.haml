@@ -3,3 +3,9 @@
   = render "shared/html_head"
   %body
     = yield
+    %nav.footer-navigation
+      = link_to_unless_current "Translate this", translate_path do
+        = link_to "Back", previous_path_with_locale(@previous_path, I18n.locale)
+      - unless current_page?(controller: "translations", action: "index")
+        = link_to_unless_current t("link_to_about_page"), about_path do
+          = link_to t("link_to_search_page"), root_path

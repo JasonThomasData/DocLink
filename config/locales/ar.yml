@@ -1,10 +1,13 @@
 # Arabic translations
 ar:
+  about_page_title: "حول هذا المشروع" # TODO: check translation
   app_purpose: "البحث عن الأطباء بالقرب منك" # TODO: check translation
   doctor_search_form:
     label: "ما هو موقعك؟" # TODO: check translation
     placeholder: "عنوانك أو ضاحية هنا" # TODO: check translation
     submit_text: "بحث" # TODO: check translation
+  link_to_about_page: "حول هذا المشروع" # TODO: check translation
+  link_to_search_page: "بحث"
   map_link:
     text: "عرض الخريطة" # TODO: check translation
     title: "عرض هذا الطبيب في خرائط Google" # TODO: check translation

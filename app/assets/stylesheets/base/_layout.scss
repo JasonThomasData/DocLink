@@ -16,12 +16,22 @@ body {
   margin-bottom: $base-spacing;
 }
 
-.translation-link {
-  background-color: $light-gray;
-  border-radius: 0;
-  padding: $small-spacing / 2 $small-spacing;
+.footer-navigation {
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
+  display: flex;
+
+  a {
+    background-color: $light-gray;
+    border-radius: 0;
+    padding: $small-spacing / 2 $small-spacing;
+    display: block;
+    flex: 1;
+
+    + a {
+      border-left: .125em solid lighten($light-gray, 10%);
+    }
+  }
 }

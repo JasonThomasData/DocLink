@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     end
 
     get "translate", to: "translations#index"
+    get "about", to: "static#about"
     root to: "doctors#search"
   end
 end
