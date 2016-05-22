@@ -1,5 +1,11 @@
+html,
+body {
+  height: 100%;
+}
+
 html {
   box-sizing: border-box;
+  background-color: #f8f8f8;
 }
 
 *,
@@ -20,6 +26,7 @@ html {
 body {
   @extend .default-width;
   padding: $small-spacing $small-spacing $base-spacing * 3;
+  background-color: #fff;
 }
 
 .site-header {
