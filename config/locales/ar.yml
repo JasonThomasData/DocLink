@@ -2,6 +2,7 @@
 ar:
   about_page_title: "حول هذا المشروع" # TODO: check translation
   app_purpose: "البحث عن الأطباء بالقرب منك" # TODO: check translation
+  call_phone_number: "هاتف %{number}"
   doctor_search_form:
     label: "ما هو موقعك؟" # TODO: check translation
     placeholder: "عنوانك أو ضاحية هنا" # TODO: check translation

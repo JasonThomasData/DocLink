@@ -22,6 +22,7 @@
 en:
   about_page_title: "About this project"
   app_purpose: "Find doctors near you"
+  call_phone_number: "Call %{number}"
   doctor_search_form:
     label: "Where are you?"
     placeholder: "Your address or suburb"

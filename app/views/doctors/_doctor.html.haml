@@ -7,4 +7,5 @@
       %p= display_address(doctor.address)
       = map_link(doctor.address)
     - if doctor.phone_number
-      %p= link_to "Call #{doctor.phone_number}", "tel:#{doctor.phone_number}"
+      %p= link_to t("call_phone_number", number: doctor.phone_number),
+                  "tel:#{doctor.phone_number}"
