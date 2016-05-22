@@ -15,6 +15,8 @@ class ApplicationController < ActionController::Base
   end
 
   def store_previous_path
+    # FIXME: Never let the previous path be the same as current path.
+    #        Currently you can get stuck on translate if you reload.
     session[:previous_path] = request.fullpath
   end
 end
