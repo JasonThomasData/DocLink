@@ -73,7 +73,13 @@ dd {
     font-size: modular-scale(-1);
     margin-bottom: $base-spacing;
     padding: $small-spacing / 2;
-    background-color: $light-gray;
+    background-color: $yellow;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: darken($yellow, 4%);
+    }
 
     *[dir="ltr"] & {
       text-align: right;
