@@ -137,10 +137,13 @@ There isn’t any fancy backend to this yet, so you’ll just have to add Doctor
 
     > ./bin/rails console
     >> Doctor.create(
-    >>   name: "Doctor Jane Yang",
+    >>   name: "Doctor Jane Yang",   
+    >>   service_name: "Yang's Doctor Surgery",
     >>   address: "86 Gowrie st, Newtown, NSW 2042, Australia",
     >>   phone_number: "02 9876 5432"
     >> )
+
+Note - name and address are required, phone_number and service_name can be dropped.
 
 ###Concerns and issues overcome
 
