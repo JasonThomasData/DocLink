@@ -31,7 +31,13 @@ body {
     flex: 1;
 
     + a {
-      border-left: .125em solid lighten($light-gray, 10%);
+      *[dir="ltr"] & {
+        border-left: .125em solid lighten($light-gray, 10%);
+      }
+
+      *[dir="rtl"] & {
+        border-right: .125em solid lighten($light-gray, 10%);
+      }
     }
   }
 }
