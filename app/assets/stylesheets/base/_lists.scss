@@ -37,8 +37,15 @@ dd {
   }
 
   .doctor-distance {
-    text-align: right;
     width: 6em;
+
+    *[dir="ltr"] & {
+      text-align: right;
+    }
+
+    *[dir="rtl"] & {
+      text-align: left;
+    }
   }
 
   .doctor-location-block {
@@ -47,8 +54,15 @@ dd {
     justify-content: space-between;
 
     p {
-      margin-right: $base-spacing;
       flex: 1;
+
+      *[dir="ltr"] & {
+        margin-right: $base-spacing;
+      }
+
+      *[dir="rtl"] & {
+        margin-left: $base-spacing;
+      }
     }
   }
 
@@ -60,5 +74,13 @@ dd {
     margin-bottom: $base-spacing;
     padding: $small-spacing / 2;
     background-color: $light-gray;
+
+    *[dir="ltr"] & {
+      text-align: right;
+    }
+
+    *[dir="rtl"] & {
+      text-align: left;
+    }
   }
 }
