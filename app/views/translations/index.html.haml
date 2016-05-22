@@ -1,5 +1,9 @@
 %section{dir: "lfr"}
   %h1 Choose your language
   %ul.language-options-list
-    %li= link_to "العربية", previous_path_with_locale(@previous_path, :ar)
+    %li
+      = link_to previous_path_with_locale(@previous_path, :ar) do
+        العربية
+        %span.language-option-english-label Arabic
+
     %li= link_to "English", previous_path_with_locale(@previous_path, :en)

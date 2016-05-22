@@ -25,6 +25,12 @@ dd {
     border-top: $base-border;
     padding: $small-spacing 0;
   }
+
+  .language-option-english-label {
+    font-size: modular-scale(0);
+    margin-left: modular-scale(-3);
+    color: $medium-gray;
+  }
 }
 
 .doctor-item {
