@@ -8,7 +8,17 @@ html {
   box-sizing: inherit;
 }
 
+.default-width {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media only screen and (min-width: $large-screen) {
+    max-width: 40em;
+  }
+}
+
 body {
+  @extend .default-width;
   padding: $small-spacing $small-spacing $base-spacing * 3;
 }
 
@@ -17,6 +27,7 @@ body {
 }
 
 .footer-navigation {
+  @extend .default-width;
   position: fixed;
   right: 0;
   bottom: 0;
