@@ -1,5 +1,5 @@
 !!! 5
-%html.no-js{lang: I18n.locale}
+%html.no-js{lang: I18n.locale, dir: direction_for_locale(I18n.locale)}
   = render "shared/html_head"
   %body
     = yield
