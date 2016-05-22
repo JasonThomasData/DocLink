@@ -98,17 +98,33 @@ select {
 
   [type="search"] {
     margin-bottom: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
     appearance: none;
     flex: 1;
+
+    *[dir="ltr"] & {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    *[dir="rtl"] & {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 
   [type="submit"] {
     padding-right: $small-spacing;
     padding-left: $small-spacing;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+
+    *[dir="ltr"] & {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    *[dir="rtl"] & {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
 
     @media only screen and (min-width: $medium-screen) {
       padding-right: $base-spacing;
