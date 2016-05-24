@@ -8,6 +8,6 @@ Rails.application.routes.draw do
 
     get "translate", to: "translations#index"
     get "about", to: "static#about"
-    root to: "doctors#search"
+    root to: "doctors#search_root"
   end
 end

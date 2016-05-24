@@ -27,6 +27,8 @@ en:
     label: "Where are you?"
     placeholder: "Your address or suburb"
     submit_text: "Search"
+  get_location:
+    submit_text: "Find my location"
   link_to_about_page: "About project"
   link_to_search_page: "Search"
   map_link:
