@@ -34,14 +34,14 @@ $(document).ready(function() {
 	    alert("We are unable to find your address.")
 	}
 
-	function findMySuburb() {
+	function findDeviceLocation() {
 	    if (navigator.geolocation) {
 	        navigator.geolocation.getCurrentPosition(success, error)
 	    }
 	}
 
 	$('#get_location').click(function(){
-		findMySuburb();
+		findDeviceLocation();
 	});
 
 });
