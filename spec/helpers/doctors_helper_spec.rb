@@ -36,6 +36,10 @@ describe DoctorsHelper do
            to eq %(<a title="#{t("map_link.title")}" class="doctor-link-map" href="https://www.google.com.au/maps/place/300+King+St,+Newtown,+NSW/">#{t("map_link.text")}</a>) }
     it { expect(helper.map_link("5 Erskineville Rd, Erskineville")).
            to eq %(<a title="#{t("map_link.title")}" class="doctor-link-map" href="https://www.google.com.au/maps/place/5+Erskineville+Rd,+Erskineville/\">#{t("map_link.text")}</a>) }
+    it "removes forward slashes" do
+      expect(helper.map_link("4 / 34 Foo St, Blacktown")).
+       to eq %(<a title="#{t("map_link.title")}" class="doctor-link-map" href="https://www.google.com.au/maps/place/4+,+34+Foo+St,+Blacktown/\">#{t("map_link.text")}</a>)
+    end
   end
 end
 
