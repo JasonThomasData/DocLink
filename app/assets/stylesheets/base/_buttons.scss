@@ -34,8 +34,10 @@
   }
 }
 
-#get_location{
+.get-location{
+  visibility: hidden;
   display: inline-block;
+  width: 100%;
+  opacity: 0.7;
   margin-top: 20px;
-  float: right;
 }
