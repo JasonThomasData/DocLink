@@ -40,7 +40,7 @@ $(document).ready(function() {
     }
   }
 
-  $('.get-location').css('visibility', 'visible')
+  $('.get-location').removeAttr("hidden");
   $('.get-location').prop("disabled", false);
 
   $('.get-location').click(function(){
