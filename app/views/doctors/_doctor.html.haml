@@ -2,9 +2,9 @@
   %article.doctor-item{id: "doctor_#{doctor.id}"}
     %header
       %h2= doctor.name
-      - if doctor.service_name
-        %p= doctor.service_name
       %span.doctor-distance= distance_with_unit(doctor.distance) if @q
+    - if doctor.service_name
+      %p= doctor.service_name
     .doctor-location-block
       %p= display_address(doctor.address)
       = map_link(doctor.address)
