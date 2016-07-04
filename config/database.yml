@@ -16,6 +16,6 @@ test:
   <<: *default
   database: doclink_test
 
-production:
-  <<: *default
-  database: doclink_production
+#production:
+#  <<: *default
+#  database: doclink_production
