@@ -56,9 +56,9 @@ The user options are reflected in the URL, which means if a service provider fin
 
 - Gives the user a map link of doctor's location
 
-#####The app will additionally do the following things
+- Allows user to find their location using a button and the JavaScrip device location API
 
-- Detects device location to search for doctors
+#####The app will additionally do the following things
 
 - Detects browser's default language
 
@@ -142,6 +142,10 @@ There isn’t any fancy backend to this yet, so you’ll just have to add Doctor
     >>   address: "86 Gowrie st, Newtown, NSW 2042, Australia",
     >>   phone_number: "02 9876 5432"
     >> )
+
+We've added some default contacts, the five we've currently got, to the ```db/seeds.rb``` file. This means that when the user runs rake ```db:setup```, the database will already had the points of data declared in the seeds.rb file.
+
+An improvement for the future may be to read issues from a spreadsheet to add records to the db from the ```db/seeds.rb``` file, and run ```rake db:setup``` each build. 
 
 Note - name and address are required, phone_number and service_name can be dropped.
 
