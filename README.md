@@ -143,7 +143,9 @@ There isn’t any fancy backend to this yet, so you’ll just have to add Doctor
     >>   phone_number: "02 9876 5432"
     >> )
 
-We've added some default contacts, the five we've currently got, to the db/seeds.rb file. This means that when the user runs rake db:setup, the database will already had the points of data declared in the seeds.rb file.
+We've added some default contacts, the five we've currently got, to the ```db/seeds.rb``` file. This means that when the user runs rake ```db:setup```, the database will already had the points of data declared in the seeds.rb file.
+
+An improvement for the future may be to read issues from a spreadsheet to add records to the db from the ```db/seeds.rb``` file, and run ```rake db:setup``` each build. 
 
 Note - name and address are required, phone_number and service_name can be dropped.
 
