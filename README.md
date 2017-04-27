@@ -1,6 +1,6 @@
-##DocLink
+## DocLink
 
-###A way for refugees in Australia (and their support workers) to find refugee-friendly doctors.
+### A way for refugees in Australia (and their support workers) to find refugee-friendly doctors.
 
 Those doctors bulk bill and can either provide language translators or speak the same language as the refugee. Refugee support services in Australia know where these services are. 
 
@@ -14,7 +14,7 @@ The intended users are refugees who need to find doctors, support workers who wi
 
 This app could be used elsewhere, but for now the scope of use is within Sydney. The project is scalable and could be expanded to include other areas with time and enough support.
 
-####Some historical background
+#### Some historical background
 
 This idea first came about at the Techfugees hackathon in Sydney. FYI, that was a great hackathon, because refugees were there. Our team was able to talk to actual refugees and service providers.
 
@@ -24,7 +24,7 @@ For this reason, we know:
 
 - Our app could be a great solution
 
-###The data collection method
+### The data collection method
 
 This is the simplest part of this project. Currently, we provide a Google Form to services that enter the details for us.
 
@@ -32,7 +32,7 @@ We can not assume these details to be super accurate. Therefore, someone will ne
 
 Since this process needs to be manual, the simple format of a Google Form suits our needs.
 
-###The app itself
+### The app itself
 
 A Rails app optimised for phone, also available on PC. Not all users will be on phone, so it's important that this site is available from a wide range of devices.
 
@@ -44,7 +44,7 @@ For the language translation, this app will use actual translations by actual tr
 
 The user options are reflected in the URL, which means if a service provider finds a doctor for a refugee and sends it to them via email or SMS, those options will be in the link. The recipient will be directed to exactly the same content the sender was viewing.
 
-#####This project does the following things
+##### This project does the following things
 
 - Keeps details of services and doctors in a database
 
@@ -56,7 +56,7 @@ The user options are reflected in the URL, which means if a service provider fin
 
 - Gives the user a map link of doctor's location
 
-#####The app will additionally do the following things
+##### The app will additionally do the following things
 
 - Detects device location to search for doctors
 
@@ -72,7 +72,7 @@ The user options are reflected in the URL, which means if a service provider fin
 
 - Allows user to filter results by type of service (possible feature for a much-advanced version)
 
-###Usage and installation
+### Usage and installation
 
 This project uses ```Ruby 2.2.4``` and the production version will run on a Heroku account. Most development has been on Apple Mac and Ubuntu machines.
 
@@ -117,7 +117,7 @@ This will install all the gems we use:
     sudo apt-get install bundler
     bundle
 
-####Installing and using PostgreSQL
+#### Installing and using PostgreSQL
 
 This is a really good read on how to do this with a Linux machine - https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-14-04
 
@@ -131,7 +131,7 @@ Make sure you're in the project directory, then run:
 
     rake db:migrate
 
-####Adding Doctors to the database
+#### Adding Doctors to the database
 
 There isn’t any fancy backend to this yet, so you’ll just have to add Doctors through the Rails console:
 
@@ -145,7 +145,7 @@ There isn’t any fancy backend to this yet, so you’ll just have to add Doctor
 
 Note - name and address are required, phone_number and service_name can be dropped.
 
-###Concerns and issues overcome
+### Concerns and issues overcome
 
 The design and goals for this app have changed overtime, after careful consideration of what the problem was, what the solution is and who this benefits.
 
@@ -157,7 +157,7 @@ We were concerned that people from less democratic nations might be concerned ab
 
 Many issues are yet to be diagnosed, since no user testing has been conducted yet. This will reveal further needs and issues during testing.
 
-###Contributing
+### Contributing
 
 These two people currently contribute:
 
@@ -166,7 +166,7 @@ These two people currently contribute:
 
 We would like to see more people contribute too. Please get in touch! 
 
-###Copyright/license
+### Copyright/license
 
 This project is in the public domain, and is free from copyright. This is offered as-is and the contributors accept no liability for others who wish to use the code.
 
